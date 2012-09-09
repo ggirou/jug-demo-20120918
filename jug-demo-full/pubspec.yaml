@@ -1,0 +1,9 @@
+name: jug-demo-full 
+version: 1.0.0
+description: >
+  JUG Dart demo
+dependencies:
+  who_listen_me:
+    git: git://github.com/dartlangfr/who_listen_me.git
+  intl:
+    sdk: intl

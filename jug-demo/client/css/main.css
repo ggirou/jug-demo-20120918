@@ -1,0 +1,76 @@
+.jugTitle img {
+  width: 64px;
+  heigth: 64px;
+  margin: 5px;
+}
+
+.mainContainer {
+  display: table; 
+  position: absolute; 
+  top: 25px; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  height: 100%; 
+  width: 100%; 
+  vertical-align: middle;
+}
+
+.centerCell {
+  display: table-cell; 
+  vertical-align: middle;
+  text-align: center;
+}
+
+.jugTable {
+  display: inline-table;
+  position: relative;
+}
+
+.jugRow {
+  display: table-row;
+  position: relative;
+  vertical-align: middle;
+}
+
+.jugCell {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  padding: 15px;
+}
+
+.counter {
+  width: 175px;
+  height: 175px;
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.counter img {
+  border: 0;
+  width: 64px;
+  height: 64px;
+  float: left;
+}
+
+.counter span {
+}
+
+.counter h1, h2, h3 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.counter h2 {
+  text-align: center;
+  font-size: 72px;
+  line-height: 84px;
+}
+
+.counter h3 {
+  font-size: 16px;
+}

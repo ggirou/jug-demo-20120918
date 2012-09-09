@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Dart Jug Demo</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <h1 class="jugRow jugTitle">
+	        <img src="img/dart-logo.png" /> 
+	        <span id="jugTitle">Jug Demo</span>
+        </h1>
+        
+       <div class="mainContainer">
+            <div class="centerCell">
+                <div class="jugTable">
+                    <div class="jugRow">
+                        <div class="jugCell">
+                            <div class="btn btn-large btn-inverse counter">
+                            	<h1 style="background:url(img/GuillaumeGirou.jpg) no-repeat center center; width: 100px; height: 150px;" />
+                                <h3>Guillaume Girou</h3>
+							</div>                        
+                        </div>
+                        <div class="jugCell">
+                        </div>
+                        <div class="jugCell">
+                            <div class="btn btn-large btn-inverse counter">
+                            	<h1 style="background:url(img/NicolasFrancois.jpg) no-repeat center center; width: 120px; height: 150px;" />
+                                <h3>Nicolas François</h3>
+							</div>                        
+                        </div>
+                    </div>
+                    <div class="jugRow">
+                        <div class="jugCell">
+                            <div id="ggirouGplus" class="btn btn-large btn-inverse counter">
+                                <h1><img src="img/gplus.png"></img></h1>
+                                <h2 id="counter">&nbsp;</h2>
+                                <h3>gplus.to/GirouGuillaume</h3>
+                            </div>
+                        </div>
+                        <div class="jugCell">
+                            <div id="counterButton" class="btn btn-large btn-inverse counter">
+                                <h1><img src="img/gplus.png" /></h1>
+                                <h2 id="counter">&nbsp;</h2>
+                                <h3>gplus.to/dartlangfr</h3>
+                            </div>
+                        </div>
+                        <div class="jugCell">
+                            <div id="nfrancoisGplus" class="btn btn-large btn-inverse counter">
+                                <h1><img src="img/gplus.png" /></h1>
+                                <h2 id="counter">&nbsp;</h2>
+                                <h3>gplus.to/NFrancois</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jugRow">
+                        <div class="jugCell">
+                            <div id="ggirouTwitter" class="btn btn-large btn-inverse counter">
+                                <h1><img src="img/twitter.png" /></h1>
+                                <h2 id="counter">&nbsp;</h2>
+                                <h3>@GirouGuillaume</h3>
+                            </div>
+                        </div>
+                        <div class="jugCell">
+                        </div>
+                        <div class="jugCell">
+                            <div id="nfrancoisTwitter" class="btn btn-large btn-inverse counter">
+                                <h1><img src="img/twitter.png" /></h1>
+                                <h2 id="counter">&nbsp;</h2>
+                                <h3>@NicoFrancois</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="application/dart" src="jug_demo.dart"></script>
+        <script src="js/dart.js"></script>
+    </body>
+</html>

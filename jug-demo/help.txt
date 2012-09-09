@@ -1,0 +1,17 @@
+index.html        
+        <script type="application/dart" src="jug_demo.dart"></script>
+        <script src="js/dart.js"></script>
+
+pubspec.yaml
+	name: dartry 
+	version: 1.0.0
+	description: >
+	  JUG Dart demo
+	dependencies:
+	  who_listen_me:
+	    git: git://github.com/dartlangfr/who_listen_me.git
+	  unittest:
+	    sdk: unittest
+
+id:
+	115816334172157652403
