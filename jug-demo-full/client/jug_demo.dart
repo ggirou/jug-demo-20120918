@@ -1,6 +1,5 @@
 #import('dart:html');
 #import('dart:isolate');
-#import('package:intl/date_format.dart');
 #import('../shared/dartry.dart');
 
 WebSocket webSocket;
@@ -8,9 +7,10 @@ WebSocket webSocket;
 var buttonIds = const ["counterButton", "ggirouGplus", "ggirouTwitter", "nfrancoisGplus", "nfrancoisTwitter"];
 
 void main() {
-  var date = new DateFormat("d MMMM yyyy", "fr_Fr").format(new Date.now());
-  query("#jugTitle").innerHTML = "$date : Hello Jug!";
-  print("$date : Hello Jug!");
+  //var date = new DateFormat("d MMMM yyyy", "fr_Fr").format(new Date.now());
+  String hello = "Hello Jug!";
+  query("#jugTitle").innerHTML = hello;
+  print(hello);
 
   int port = 12345;
   String url = "ws://127.0.0.1:$port";

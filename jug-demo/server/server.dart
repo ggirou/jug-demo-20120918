@@ -42,7 +42,6 @@ class TickHandler {
     print('New WebSocket connection');
     connections.add(conn);
     conn.onClosed = (status, reason) => connections.remove(conn);
-    conn.onError = (e) => connections.remove(conn);
   }
 }
 

@@ -74,9 +74,11 @@ class TickHandler {
   }
   
   tick(var _timer) {
-    cerclers.forEach((key, callFollowers) => callFollowers().then((number) => send(new CounterData(key, number))));
-    if(_count%10 == 0){
-      followers.forEach((key, callFollowers) => callFollowers().then((number) => send(new CounterData(key, number))));
+    if(connections.length > 0) {
+      cerclers.forEach((key, callFollowers) => callFollowers().then((number) => send(new CounterData(key, number))));
+      if(_count % 10 == 0){
+        followers.forEach((key, callFollowers) => callFollowers().then((number) => send(new CounterData(key, number))));
+      }
     }
     _count++;
   }
@@ -101,11 +103,6 @@ class TickHandler {
     conn.onMessage = (message) {
       print('Message received: $message');
       toggle();
-    };
-    
-    conn.onError = (e) {
-      print("Connection error");
-      connections.remove(conn); // onClosed isn't being called ??
     };
   }
 }
