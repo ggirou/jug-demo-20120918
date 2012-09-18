@@ -22,13 +22,14 @@ class TickHandler {
   
   tick(var _timer) {
     counter++;
-    // TODO 5 Server side timer
+    send(counter.toString());
   }
   
   send(String value) {
     if(timer != null) {
       print("Send: $value");
-      connections.forEach((conn) => conn.send(value));
+      // TODO 5 Server side timer
+      connections.forEach((c) => c.send(value));
     }
   }
   

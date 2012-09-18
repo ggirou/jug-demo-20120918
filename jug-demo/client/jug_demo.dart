@@ -34,7 +34,7 @@ main() {
 //Timer timer;
 //toggleTimer() {
 //  if(timer == null) {
-//    timer =  new Timer.repeating(1000, tick); 
+//    timer =  new Timer.repeating(1000, (t) => tick()); 
 //  } else {
 //    timer.cancel();
 //    timer = null;
